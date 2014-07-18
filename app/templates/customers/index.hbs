@@ -1,0 +1,16 @@
+<div id="my_yay">yay</div>
+
+<div class="customers">
+  {{#each controller}}
+    {{name}}
+  {{/each}}
+</div>
+
+
+<button {{action addCustomer}}>Add customer</button>
+
+{{#if isEnough}}
+  <p>
+    whoah stop right there
+  </p>
+{{/if}}
